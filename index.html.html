@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DetailBB - Auto & Bike</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+	  background-color: white
+	  color: white;
+    
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('Auto.png') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      overflow: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .logo img {
+      height: 180px;
+      width: auto;
+    }
+
+    .text-box {
+      position: absolute;
+      left: 80px;
+      bottom: 200px;
+    }
+
+    .text-box h1 {
+      font-size: 64px;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    .text-box h2 {
+      font-size: 48px;
+      margin: 0;
+      color: #ff3b3f;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .buttons {
+      position: absolute;
+      right: 60px;
+      top: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      background-color: #ff3b3f;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e12c2f;
+    }
+
+    .section {
+      padding: 100px 20px;
+      background-color: black;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service-box {
+      background-color: #d62828;
+      color: white;
+      width: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .service-box img {
+      width: 100%;
+      height: auto;
+    }
+
+    .service-box h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .service-box p {
+      font-size: 14px;
+      margin: 0 10px 10px;
+    }
+
+    .service-box .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 0 20px;
+    }
+
+    /* Styl sekcji kontaktu z logo po lewej */
+    .contact-box {
+	background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .contact-logo {
+      max-width: 300px;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sekcja główna z grafiką i logo -->
+  <div class="hero">
+    <div class="logo">
+      <!-- Logo czerwone dodane -->
+      <img src="Logo Biale.png" alt="DetailBB Logo Czerwone">
+    </div>
+
+    <div class="text-box">
+      <h1>DETAILBB</h1>
+      <h2>BO DETALE MAJĄ<br>ZNACZENIE</h2>
+    </div>
+
+    <!-- Przyciski nawigacyjne -->
+    <div class="buttons">
+      <a href="#auto" class="btn">USŁUGI SAMOCHODOWE</a>
+      <a href="#bike" class="btn">USŁUGI ROWEROWE</a>
+      <a href="#mechanic" class="btn">USŁUGI MECHANICZNE</a>
+      <a href="#contact" class="btn">KONTAKT</a>
+    </div>
+  </div>
+
+  <!-- Sekcja usług samochodowych -->
+  <section id="auto" class="section">
+    <h2>SAMOCHODY</h2>
+    <div class="services-grid">
+      <!-- Każde pudełko zawiera usługę wraz z obrazkiem, opisem i ceną -->
+      <div class="service-box">
+        <img src="Mycie zewnetrzne.png" alt="Mycie Zewnętrzne">
+        <h3>MYCIE ZEWNĘTRZNE</h3>
+        <p>usunięcie brudu i dezynfekcja,<br>mycie nadkoli, detali plastikowych i szyby</p>
+        <div class="price">50zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Mycie wnetrza.png" alt="Mycie Wnętrza">
+        <h3>MYCIE WNĘTRZA</h3>
+        <p>odkurzanie wszystkich powierzchni, dywaników,<br>czyszczenie plastików i szyb</p>
+        <div class="price">50zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Mycie komory.png" alt="Komora Silnika">
+        <h3>MYCIE KOMORY SILNIKA</h3>
+        <p>usunięcie brudu i czyszczenie plastików</p>
+        <div class="price">20zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Pakiet pelny.png" alt="Pakiet Pełny+">
+        <h3>PAKIET PEŁNY+</h3>
+        <p>połączenie wszystkich trzech usług</p>
+        <div class="price">100zł</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja usług rowerowych -->
+  <section id="bike" class="section">
+    <h2>ROWERY</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <img src="Mycie rowera.png" alt="Mycie Roweru">
+        <h3>MYCIE ROWERU</h3>
+        <p>dokładne mycie ramy i kół,<br>czyszczenie napędu<br>(składającego się z łańcucha i kasety)</p>
+        <div class="price">50zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Detale rowera.png" alt="Detale Roweru">
+        <h3>DETALE ROWERU</h3>
+        <p>smarowanie i konserwację<br>części ruchomych</p>
+        <div class="price">20zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Pelny plus rower.png" alt="Pełen Pakiet+">
+        <h3>PEŁEN PAKIET+</h3>
+        <p>połączenie dwóch usług</p>
+        <div class="price">60zł</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja usług mechanicznych -->
+  <section id="mechanic" class="section">
+    <h2>Usługi Mechaniczne</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <img src="Wymiana kol.png" alt="Wymiana Kół">
+        <h3>WYMIANA KÓŁ (AUTO)</h3>
+        <p>Pełna wymiana kół (4) na zimowe/letnie </p>
+        <div class="price">100zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Wymiana klockow.png" alt="Wymiana Klocków">
+        <h3>WYMIANA KLOCKÓW HAMULCOWYCH ROWERU</h3>
+        <p>Całkowita wymiana klocków hamulcowych w zależności od potrzeby (tył i przód)</p>
+        <div class="price">20zł</div>
+      </div>
+      <div class="service-box">
+        <img src="Czesci.png" alt="Wymiana Części">
+        <h3>WYMIANA KONKRETNEJ CZĘŚCI W ROWERZE</h3>
+        <p>Wymiana takich części jak (Napęd Kasety, Ośki, Łańcuchy)</p>
+        <div class="price">DO UZGODNIENIA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja kontaktowa -->
+  <section id="contact" class="section">
+    <div class="contact-box">
+      <!-- Duże czerwone logo po lewej -->
+      <div class="contact-logo">
+        <img src="Logo Czerwone.png" alt="Logo Czerwone" style="width:100%; height:auto;">
+      </div>
+      <!-- Dane kontaktowe po prawej -->
+      <div class="contact-info">
+        <h2>Skontaktuj się z nami</h2>
+        <p><strong>Email:</strong> detailbbautobike@gmail.com</p>
+        <p><strong>Telefon 1:</strong> +48 698 115 507</p>
+        <p><strong>Telefon 2:</strong> +48 501 317 604</p>
+        <p><strong>Adres:</strong> Bielsko-Biała 43-300, Komorowice, ul. Akademicka</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
